@@ -9,9 +9,16 @@
         android:id="@+id/shimeerlayout"
         android:layout_height="match_parent">
         <LinearLayout
+            android:id="@+id/linearLayout1"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/rukao"
+                android:text="noth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
             <include
                 layout="@layout/mocklayout"/>
