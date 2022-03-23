@@ -16,7 +16,7 @@ namespace skeletonview
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        TextView tv;
+        //TextView tv;
         ShimmerLayout shimmerLayout;
         List<string> employeenames;
         LinearLayout linearLayout;
@@ -34,7 +34,7 @@ namespace skeletonview
             SetContentView(Resource.Layout.activity_main);
             shimmerLayout = FindViewById<ShimmerLayout>(Resource.Id.shimeerlayout);
             linearLayout = FindViewById<LinearLayout>(Resource.Id.linearLayout1);
-            tv  = FindViewById<TextView>(Resource.Id.rukao);
+           // tv  = FindViewById<TextView>(Resource.Id.rukao);
             recycler = FindViewById<RecyclerView>(Resource.Id.recyclerView);
            recycler.Visibility = Android.Views.ViewStates.Invisible;
             employeenames = new List<string> { "sagar", "meet", "manish", "jay", "Aires", "Akash", "Raju", "meet", "manish", "jay", "Aires", "Akash", "Raju", "meet", "manish", "jay", "Aires", "Akash", "Raju" };
@@ -43,7 +43,7 @@ namespace skeletonview
             mAdapter = new recycleradapter(employeenames, ApplicationContext);
             recycler.SetAdapter(mAdapter);
             shimmerLayout.StartShimmerAnimation();
-       
+            
 
 
         }
